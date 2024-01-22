@@ -21,4 +21,8 @@ def create_app():
 
     return app
 
-
+print("helloWorld")
+from sweetpotato import show_spud
+contentsofConfigYaml = show_spud("config.yaml")
+#print(type(contentsofConfigYaml))
+print(contentsofConfigYaml.get("name"))
